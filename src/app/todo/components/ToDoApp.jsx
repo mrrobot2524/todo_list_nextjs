@@ -63,10 +63,9 @@ export default function ToDoApp() {
   return (
     <div>
       <AddTodo onAdd={addTodo} />
-      <div className="flex justify-between items-center gap-12 mb-6">
+      <div className="flex sm:flex-row flex-col flex-wrap lg:flex-nowrap justify-between sm:justify-center items-center gap-12 sm:gap-2 mb-6">
         <Filter value={filter} onChange={setFilter}/>
         <Input placeholder="Поиск..." value={query} onChange={(e) => setQuery(e.target.value)} className="w-full"/>
-        {/* <input className="input"  placeholder="Поиск..." value={query} onChange={(e) => setQuery(e.target.value)} style={{maxWidth: 220}}/> */}
       </div>
       <TodoList todos={filteredTodos} onToggle={toggleTodo} onDelete={deleteTodo} onEdit={editTodo} />
       <footer className="footer">
