@@ -9,7 +9,8 @@ const Button = ({children, variant = "primary", sizeBtn = "md", className, ...pr
         succsess: "bg-green-600 text-white hover:bg-green-700",
         secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300",
         outline: "border border-grey-400 text-gray-900 hover:bg-gray-100 bg-transparent",
-        danger: "bg-red-600 text-white hover:bg-red-700"
+        danger: "bg-red-600 text-white hover:bg-red-700",
+        cleanBtn: "bg-none border",
     };
 
     const sizes = {
