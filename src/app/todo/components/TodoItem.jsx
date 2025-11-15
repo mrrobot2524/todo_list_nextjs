@@ -21,7 +21,7 @@ export default function TodoItem({ todo, index, onToggle, onDelete, onEdit }) {
       {!isEditing ? (
         <>
           <span className="text" onDoubleClick={() => setIsEditing(true)}>{todo.text}</span>
-          <div className="actions">
+          <div className="flex-wrap justify-end actions">
             <Button variant="primary" sizeBtn="md" onClick={() => setIsEditing(true)}>
                 Edit
             </Button>

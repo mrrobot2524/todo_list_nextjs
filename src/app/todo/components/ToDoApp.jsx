@@ -63,7 +63,7 @@ export default function ToDoApp() {
   return (
     <div>
       <AddTodo onAdd={addTodo} />
-      <div className="flex sm:flex-row flex-col flex-wrap lg:flex-nowrap justify-between sm:justify-center items-center gap-12 sm:gap-2 mb-6">
+      <div className="flex sm:flex-row flex-col-reverse flex-wrap lg:flex-nowrap justify-between items-center gap-12 sm:gap-2 mb-6 w-full">
         <Filter value={filter} onChange={setFilter}/>
         <Input placeholder="Поиск..." value={query} onChange={(e) => setQuery(e.target.value)} className="w-full"/>
       </div>

@@ -4,14 +4,14 @@ import Button from "./UI/Button";
 
 const Filter = ({value, onChange}) => {
     return (
-        <div className="flex gap-5">
-            <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'all' ? '': 'small'}`} onClick={() => onChange("all")}>
+        <div className="flex gap-5 w-full">
+            <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'all' ? '': 'small'} w-full lg:w-auto`} onClick={() => onChange("all")}>
                 All
             </Button>
-            <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'active' ? '': 'small'}`} onClick={() => onChange("active")}>
+            <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'active' ? '': 'small'} w-full lg:w-auto`} onClick={() => onChange("active")}>
                 Active
             </Button>
-            <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'completed' ? '': 'small'}`} onClick={() => onChange("completed")}>
+            <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'completed' ? '': 'small'} w-full lg:w-auto`} onClick={() => onChange("completed")}>
                 Completed
             </Button>
         </div>

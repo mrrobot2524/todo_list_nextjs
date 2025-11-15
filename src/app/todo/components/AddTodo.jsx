@@ -14,7 +14,7 @@ export default function AddTodo({ onAdd }) {
   };
 
   return (
-    <form onSubmit={submit} className="add-form">
+    <form onSubmit={submit} className="flex sm:flex-row flex-col justify-center add-form">
         <Input placeholder="Добавить задачу..." value={text} onChange={(e) => setText(e.target.value)} className="w-full"/>
         <Button type="submit" variant="primary" sizeBtn="md">
                 Добавить
