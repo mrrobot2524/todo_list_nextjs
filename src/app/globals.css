@@ -51,12 +51,20 @@ h1 {
   border-radius: 8px;
   border: 0;
   cursor: pointer;
-  background: var(--accent);
+  /* background: var(--accent); */
   color: #fff;
+  transition: all .5s;
 }
 .btn.small {
   padding: 6px 8px;
   font-size: 13px;
+}
+.btn.small::before{
+  content: '';
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 6px 6px;
+  margin-right: 5px;
 }
 .btn.danger {
   background: #ef4444;
