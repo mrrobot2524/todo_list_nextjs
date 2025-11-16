@@ -4,7 +4,7 @@ import Button from "./UI/Button";
 
 const Filter = ({value, onChange}) => {
     return (
-        <div className="flex flex-wrap gap-5 w-full">
+        <div className="flex flex-wrap sm:flex-nowrap gap-5 w-full">
             <Button variant="primary" sizeBtn="sm" className={`btn ${value === 'all' ? '': 'small'} w-full lg:w-auto`} onClick={() => onChange("all")}>
                 All
             </Button>
