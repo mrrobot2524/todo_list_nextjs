@@ -31,17 +31,17 @@ export default function TodoItem({ todo, index, onToggle, onDelete, onEdit }) {
           </div>
         </>
       ) : (
-        <>
-          <input className="edit-input" value={value} onChange={(e) => setValue(e.target.value)} />
-          <div className="actions">
+        <div className="flex md:flex-row flex-col md:items-center gap-3 md:gap-2 w-full">
+          <input className="w-full edit-input" value={value} onChange={(e) => setValue(e.target.value)}/>
+          <div className="flex flex-wrap sm:flex-nowrap actions">
             <Button variant="primary" sizeBtn="sm" onClick={save}>
                 Save
             </Button>
-            <Button variant="danger" sizeBtn="sm" onClick={() => { setIsEditing(false); setValue(todo.text); }}>
+            <Button variant="danger" sizeBtn="sm" onClick={() => { setIsEditing(false); setValue(todo.text); }} className="w-full">
                 Cancel
             </Button>
           </div>
-        </>
+        </div>
       )}
     </li>
   );
